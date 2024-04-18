@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(50, 50, 50, 1);
+    height: 100px;
+    margin-bottom: 25px;
+}
+.nav_buttons{
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+.message{
+    display: flex;
+    justify-content: center;
+}
+
+.main_button{
+    position: absolute;
+    margin-top: 39px;
+    margin-left: 260px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.main_button:hover{
+    color: #ff4a4a;
+    transition: 0.5s;
+}
+
+.teachers_button{
+    padding-right: 20px;
+    margin-top: 39px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.teachers_button:hover{
+    color: #ff4a4a;
+    transition: 0.5s;
+}
+
+.departments_button{
+    margin-top: 39px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.departments_button:hover{
+    color: #ff4a4a;
+    transition: 0.5s;
+}
+
+.discipline_button{
+    padding-left: 20px;
+    margin-top: 39px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.discipline_button:hover{
+    color: #ff4a4a;
+    transition: 0.5s;
+}
+
+.logout_button{
+    justify-content: center;
+    display: flex;
+    margin-left: 1400px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    position: relative;
+    bottom: 20px;
+
+}
+
+.logout_button:hover{
+    color: #ff4a4a;
+    transition: 0.5s;
+}
+
+.login_button{
+    position: absolute;
+    margin-top: 39px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+.auth_title{
+    margin-top: 10px;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.login_button:hover{
+    color: #ff4a4a;
+    transition: 0.5s;
+}
+
+.login_div{
+    background-color: rgba(75, 75, 75, 1);
+    width: 480px;
+    height: 477px;
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+.login_page{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 40px;
+    color: white;
+}
+::placeholder{
+    width: 100px;
+}
+.login_input{
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 450px;
+    height: 64px;
+}
+
+.button_login{
+    background-color: rgb(74, 126, 64);
+    margin-top: 60px;
+    border-radius: 50px;
+    width: 258px;
+    height: 51px;
+    font-size: 32px;
+    color: #ffffff;
+    border: none;
+}
+.button_login:hover{
+    transition: 0.5s;
+    background-color: rgba(92, 171, 73, 0.87);
+}
+
+.discipline_list{
+    margin-top: 50px;
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: 28px;
+}
+.discipline_departments_list{
+    margin-top: -160px;
+    margin-left: 850px;
+    display: flex;
+    flex-direction: column;
+}
+.discipline_text{
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.departments_list{
+    margin-top: 50px;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.teachers_text{
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+.teachers_list{
+
+}
+.list_items {
+    list-style: none;
+
+}
+.list_items li {
+    margin-bottom: 10px;
+
+}
+.teacher_info{
+    display: inline-block;
+}
+/*.lectures_btn{*/
+/*    display: inline-block;*/
+/*    margin-right: 10px;*/
+/*}*/
+
+
+
+
+
+
+.teachers_birth_date{
+    padding-left: 40px;
+    padding-right: 40px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+
+.teachers_role{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+}
+
+.teachers_all{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+.add_person_button{
+    color: #c4c4c4;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 39px;
+    padding-left: 50px;
+}
+
+.add_person_button:hover{
+    color: #ff4a4a;
+    transition: 0.5s;
+}
+
+.add_person_title{
+    margin: 0 auto;
+    padding-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.if_button{
+    position: absolute;
+    margin-bottom: 50px;
+}
+
+.signup_page{
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.add_person_div{
+    background-color: rgba(75, 75, 75, 1);
+    width: 700px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+.add_input{
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 450px;
+    height: 44px;
+}
+
+.warning_title_header{
+    color: white;
+    font-size: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+h1{
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+
+.add_button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.add_teacher_button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: #000000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add_teacher_button:hover{
+    transition: 0.5s;
+    background-color: rgba(38, 126, 45, 0.51);
+}
+
+.add_teacher_div{
+    padding-top: 15px;
+    padding-right: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.add_departments_div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.add_discipline_div{
+    padding-left: 400px;
+}
+
+.add_discipline_button{
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: #000000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.add_discipline_button:hover{
+    transition: 0.5s;
+    background-color: rgba(38, 126, 45, 0.51);
+}
+
+.add_departments_button{
+    width: 200px;
+    height: 50px;
+    background-color: #e0e0e0;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.add_departments_button:hover{
+    transition: 0.5s;
+    background-color: rgba(38, 126, 45, 0.51);
+}
+.photo_teacher{
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+}
+.but_departments{
+    margin-top: 30px;
+
+}
+.gender_select{
+    margin-top: 20px;
+}
