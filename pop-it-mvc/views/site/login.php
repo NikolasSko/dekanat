@@ -4,16 +4,13 @@
 <?php
 if (!app()->auth::check()):
     ?>
-<div class="login_div">
-    <h1 class="auth_title">Авторизация</h1>
-    <form class="login_page" method="post">
+<div class="login">
+    <h1 class="title">Авторизация</h1>
+    <form class="login_form" method="post">
         <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
-
-        <label>Введите Логин</label>
-        <input class="login_input" type="text" name="login">
-        <label>Введите Пароль</label>
-        <input class="login_input" type="password" name="password">
-        <button class="button_login" >Войти</button>
+        <input placeholder="Введите логин" class="login_input1" type="text" name="login">
+        <input placeholder="Введите пароль" class="login_input1" type="password" name="password">
+        <button class="login_btn" >Войти</button>
     </form>
 </div>
 <?php endif;

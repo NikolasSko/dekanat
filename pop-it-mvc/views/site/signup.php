@@ -7,14 +7,14 @@ if (!app()->auth->user()->id_role == '1'):
         <?php
         else:
             ?>
-            <h2 class="add_person_title">Добавление сотрудника</h2>
+            <h2 class="title">Добавление сотрудника</h2>
             <div class="add_person_div">
-                <form class="signup_page" method="post">
+                <form class="form_add_lecturer" method="post">
                     <input name="csrf_token" type="hidden" value="<?= app()->auth::generateCSRF() ?>"/>
-                    <label>Имя</label><input class="add_input" type="text" name="name">
-                    <label>Логин</label><input class="add_input" type="text" name="login"></label>
-                    <label>Пароль</label><input class="add_input" type="password" name="password"></label>
-                    <button class="add_button">Зарегистрироваться</button>
+                    <input placeholder="Введите имя" class="login_input1" type="text" name="name">
+                    <input placeholder="Введите логин" class="login_input1" type="text" name="login"></label>
+                    <input placeholder="Введите пароль" class="login_input1" type="password" name="password"></label>
+                    <button class="form_add_btn">Добавить</button>
                 </form>
             </div>
         <?php

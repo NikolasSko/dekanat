@@ -1,1 +1,1 @@
-<h2 class="message"><?= $message ?? ''; ?></h2>
+<h1 class="title">Главная страница</h1>

@@ -34,7 +34,7 @@ class Site
     public function logout(): void
     {
         Auth::logout();
-        app()->route->redirect('/hello');
+        app()->route->redirect('/login');
     }
 
 
@@ -57,7 +57,7 @@ class Site
             }
 
             if (User::create($request->all())) {
-                app()->route->redirect('/login');
+                app()->route->redirect('/hello');
             }
         }
         return new View('site.signup');
@@ -92,7 +92,7 @@ class Site
             // Проверяем, было ли загружено изображение
             if (isset($_FILES['img']) && $_FILES['img']['error'] === UPLOAD_ERR_OK) {
                 // Путь для сохранения изображения
-                $target_dir = "/srv/users/exfbiggp/ceinizh-m3/pop-it-mvc/public/image/";;
+                $target_dir = "/srv/users/hmtrbncv/hnsgunc-m1/pop-it-mvc/public/image/";;
                 $target_file = $target_dir . basename($_FILES['img']['name']);
 
                 // Перемещаем загруженное изображение в указанную директорию
@@ -135,7 +135,7 @@ class Site
 
     public function hello(): string
     {
-        return new View('site.hello', ['message' => 'hello working']);
+        return new View('site.hello', []);
     }
 
     public function teachers(): string

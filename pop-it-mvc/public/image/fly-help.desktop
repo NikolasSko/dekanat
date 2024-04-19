@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=assistant -collectionFile /usr/share/doc/fly/qthelp/ru/flyhelp.qhc -showUrl qthelp://flyhelp.ru/doc/index.html
-Icon=help-browser
-Name=Help
-Name[ru]=Помощь
-Categories=None;
-OnlyShowIn=FLY;
-X-FLY-IconContext=Applications

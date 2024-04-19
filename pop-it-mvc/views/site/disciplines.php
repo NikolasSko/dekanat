@@ -6,15 +6,13 @@ if (!app()->auth::check()):
 <?php
 else:
     ?>
-    <h1>Список дисциплин</h1>
-<!--    <div class="add_departments_div">-->
-    <div class="but_departments"><a class="add_departments_button" href="add_discipline">Добавить</a></div>
-<div class="add_departments_div">
-<!--    </div>-->
+    <h1 class="title">Список дисциплин</h1>
+    <a class="lecturers_add" href="add_discipline">Добавить дисциплину</a>
+    <div class="add_departments_div">
     <ul class="list_items">
         <?php foreach ($disciplines as $discipline): ?>
             <li>
-                <span class="teacher_info"><?php echo $discipline->name . ' ' . $discipline->departments->name; ?></span>
+                <span class="teacher_info"><?php echo 'Дисциплина: ' . ' ' .$discipline->name . ' Кафедра:  ' . $discipline->departments->name; ?></span>
             </li>
 
         <?php endforeach; ?>
